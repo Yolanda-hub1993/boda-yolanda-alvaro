@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yolanda & Álvaro — 21·11·2026</title>
+  <meta name="description" content="Web de boda: información, itinerario, alojamientos y confirmación de asistencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio">Yolanda & Álvaro</a>
+
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#rsvp">Confirmar</a>
+      <a href="#itinerario">Itinerario</a>
+      <a href="#regalo">Regalo</a>
+      <a href="#alojamientos">Alojamientos</a>
+      <a href="#comer">Dónde comer</a>
+      <a href="#turismo">Turismo</a>
+      <a href="#getting-ready">Getting ready</a>
+      <a href="#faq">Q&amp;A</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero__inner">
+        <p class="kicker">¡Estamos deseando celebrar este día tan especial con vosotros!</p>
+        <h1>Yolanda <span class="amp">&amp;</span> Álvaro</h1>
+        <p class="meta">Sábado <strong>21</strong> de <strong>noviembre</strong>, <strong>2026</strong> · Sevilla, España</p>
+
+        <div class="cta">
+          <a class="btn" href="#rsvp">Confirmar asistencia</a>
+          <a class="btn btn--ghost" href="#itinerario">Ver itinerario</a>
+        </div>
+
+        <!-- Cuenta atrás hasta la ceremonia (13:00) -->
+        <div class="countdown" data-date="2026-11-21T13:00:00+01:00">
+          <div class="cd"><span class="cd__num" id="d">--</span><span class="cd__lbl">Días</span></div>
+          <div class="cd"><span class="cd__num" id="h">--</span><span class="cd__lbl">Horas</span></div>
+          <div class="cd"><span class="cd__num" id="m">--</span><span class="cd__lbl">Min</span></div>
+          <div class="cd"><span class="cd__num" id="s">--</span><span class="cd__lbl">Seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CEREMONIA / CELEBRACIÓN -->
+    <section class="grid2">
+      <article class="card">
+        <h2>Ceremonia</h2>
+        <p class="muted">La ceremonia será en la <strong>Parroquia Corpus Christi</strong>, en Sevilla.</p>
+        <ul class="list">
+          <li><strong>Dirección:</strong> Av. de la Palmera 39, 41013, Sevilla</li>
+          <li><strong>Hora:</strong> 13:00 — 14:00</li>
+        </ul>
+        <a class="link" href="https://www.google.com/maps?q=Parroquia%20Corpus%20Christi%20Avenida%20de%20la%20Palmera%2039%2041013%20Sevilla" target="_blank" rel="noreferrer">Ver en Google Maps →</a>
+      </article>
+
+      <article class="card">
+        <h2>Celebración</h2>
+        <p class="muted">Después lo celebraremos en la <strong>Hacienda los Parrales</strong>.</p>
+        <ul class="list">
+          <li><strong>Dirección:</strong> Carretera Sevilla-Huelva km 569, 41800 Sanlúcar la Mayor, Sevilla</li>
+          <li><strong>Hora:</strong> 15:00 — 02:30</li>
+        </ul>
+        <a class="link" href="https://www.google.com/maps?q=Hacienda%20los%20Parrales%20Carretera%20Sevilla-Huelva%20km%20569%2041800%20Sanl%C3%BAcar%20la%20Mayor%20Sevilla" target="_blank" rel="noreferrer">Ver en Google Maps →</a>
+      </article>
+    </section>
+
+    <!-- ITINERARIO -->
+    <section id="itinerario" class="section">
+      <div class="section__head">
+        <h2>Itinerario</h2>
+        <p class="muted">Para que no se escape nada 😉</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl">
+          <div class="tl__time">13:00</div>
+          <div class="tl__body"><strong>Ceremonia</strong><span>Parroquia Corpus Christi</span></div>
+        </div>
+
+        <div class="tl">
+          <div class="tl__time">14:15</div>
+          <div class="tl__body"><strong>Autobús a la Hacienda</strong><span>Salida desde la puerta de la Iglesia</span></div>
+        </div>
+
+        <div class="tl">
+          <div class="tl__time">15:00</div>
+          <div class="tl__body"><strong>Celebración</strong><span>Hacienda los Parrales</span></div>
+        </div>
+
+        <div class="tl">
+          <div class="tl__time">22:30</div>
+          <div class="tl__body"><strong>Autobús de vuelta</strong><span>Hacienda → Sevilla (puntos editables)</span></div>
+        </div>
+        <div class="tl">
+          <div class="tl__time">00:30</div>
+          <div class="tl__body"><strong>Autobús de vuelta</strong><span>Hacienda → Sevilla (puntos editables)</span></div>
+        </div>
+        <div class="tl">
+          <div class="tl__time">02:30</div>
+          <div class="tl__body"><strong>Autobús de vuelta</strong><span>Hacienda → Sevilla (puntos editables)</span></div>
+        </div>
+      </div>
+
+      <div class="card note">
+        <h3>Servicio de autobuses</h3>
+        <p class="muted">
+          Habrá autobús <strong>desde la puerta de la Iglesia</strong> hacia la Hacienda a las <strong>14:15h</strong>.
+          A la vuelta, habrá autobuses desde la Hacienda hacia distintos puntos de Sevilla (edítalos abajo).
+        </p>
+
+        <div class="bus-grid">
+          <div class="bus-item">
+            <div class="bus-time">22:30</div>
+            <div class="bus-desc">
+              <strong>Hacienda → Sevilla</strong>
+              <span class="muted" id="busStops1">(Puntos de parada: edítame en script.js)</span>
+            </div>
+          </div>
+          <div class="bus-item">
+            <div class="bus-time">00:30</div>
+            <div class="bus-desc">
+              <strong>Hacienda → Sevilla</strong>
+              <span class="muted" id="busStops2">(Puntos de parada: edítame en script.js)</span>
+            </div>
+          </div>
+          <div class="bus-item">
+            <div class="bus-time">02:30</div>
+            <div class="bus-desc">
+              <strong>Hacienda → Sevilla</strong>
+              <span class="muted" id="busStops3">(Puntos de parada: edítame en script.js)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGALO -->
+    <section id="regalo" class="section">
+      <div class="section__head">
+        <h2>Regalo</h2>
+        <p class="muted">Vuestra presencia es el mejor regalo. Si queréis tener un detalle adicional…</p>
+      </div>
+
+      <div class="card">
+        <div class="iban">
+          <span class="iban__lbl">Cuenta bancaria</span>
+          <code id="iban">ES67 0182 3293 0602 0162 7304</code>
+          <button class="btn btn--small" id="copyIban" type="button">Copiar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALOJAMIENTOS -->
+    <section id="alojamientos" class="section">
+      <div class="section__head">
+        <h2>Alojamientos</h2>
+        <p class="muted">Plantilla editable: edita la lista en <strong>script.js</strong>.</p>
+      </div>
+
+      <div class="cards3" id="hotelsGrid"></div>
+
+      <div class="card" style="margin-top:12px;">
+        <p class="muted">(Editable) Consejo sobre reservar con antelación, zonas recomendadas, etc.</p>
+      </div>
+    </section>
+
+    <!-- DÓNDE COMER -->
+    <section id="comer" class="section">
+      <div class="section__head">
+        <h2>Dónde comer</h2>
+        <p class="muted">Dejo los enlaces pendientes para que los añadas cuando los tengas.</p>
+      </div>
+
+      <div class="card">
+        <h3>Restaurantes / Tapas</h3>
+        <p class="muted">Pega aquí tu enlace a lista compartida:</p>
+        <a id="foodLink" class="link" href="#" target="_blank" rel="noreferrer">Añadir enlace →</a>
+
+        <hr class="sep" />
+
+        <h3>Copas / Discotecas</h3>
+        <p class="muted">Pega aquí tu enlace a lista compartida:</p>
+        <a id="partyLink" class="link" href="#" target="_blank" rel="noreferrer">Añadir enlace →</a>
+      </div>
+    </section>
+
+    <!-- TURISMO -->
+    <section id="turismo" class="section">
+      <div class="section__head">
+        <h2>Turismo</h2>
+        <p class="muted">Recomendaciones para aprovechar Sevilla.</p>
+      </div>
+
+      <div class="card tourism">
+        <div class="tour-item">
+          <h3>Giralda y catedral</h3>
+          <p class="muted">Templo católico de estilo gótico declarado Patrimonio de la Humanidad por la UNESCO en 1987.</p>
+          <p class="muted">Algo importante a tener en cuenta es que la Catedral de Sevilla es uno de los lugares más visitados por lo que te aconsejamos reservar las entradas con antelación.</p>
+          <p class="small"><strong>Dirección:</strong> Av. de la Constitución, Casco Antiguo, 41004, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> lunes – sábados: 11:00-18:00; domingos: 12:00-18:00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Real Alcázar</h3>
+          <p class="muted">Conjunto palaciego amurallado construido originalmente en la Alta Edad Media.</p>
+          <p class="muted">Algo importante a tener en cuenta es que el Alcázar es uno de los lugares más visitados por lo que te aconsejamos reservar las entradas con antelación.</p>
+          <p class="small"><strong>Dirección:</strong> Casco Antiguo, 41004, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> lunes - domingo: 9:30 – 18:00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Archivo de Indias</h3>
+          <p class="muted">El Archivo General de Indias de Sevilla se creó en 1785 por deseo del rey Carlos III. La visita turística es libre y gratuita.</p>
+          <p class="small"><strong>Dirección:</strong> Av. de la Constitución, s/n, Casco Antiguo, 41004, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> martes – sábado: 9:30 – 17:00; domingos: 10:00 – 14:00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Paseo por barrio de Santa Cruz</h3>
+          <p class="muted">Barrio histórico de Sevilla que se asienta en parte de la antigua judería de la ciudad.</p>
+          <p class="muted">Dejamos aquí un mapa con lugares de interés (verde) y bares en el barrio de Santa Cruz (rojo).</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Ayuntamiento de Sevilla, Plaza de San Francisco</h3>
+          <p class="muted">Recomendamos pasear por la plaza de San Francisco y ver el ayuntamiento desde fuera.</p>
+          <p class="small"><strong>Dirección:</strong> Pl. de S. Francisco, Casco Antiguo, 41004 Sevilla</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Pasear por la calle Sierpes y Tetúan</h3>
+          <p class="muted">Las dos calles más comerciales de Sevilla, perfectas para compras de última hora.</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Iglesia Colegial del Divino Salvador</h3>
+          <p class="muted">Templo católico barroco de comienzos del siglo XVII.</p>
+          <p class="small"><strong>Dirección:</strong> Pl. del Salvador, 3, Casco Antiguo, 41004, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> Lunes - Sábado: 10.15-17.30; Domingo: 14:30-19.00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Plaza de la Encarnación (mirador “Las Setas”)</h3>
+          <p class="muted">Mirador donde poder disfrutar de las vistas de Sevilla. Recomendamos subir al atardecer.</p>
+          <p class="muted">La entrada cuesta 15€ y se puede comprar allí mismo.</p>
+          <p class="small"><strong>Dirección:</strong> Pl. de la Encarnación, s/n, Casco Antiguo, 41004, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> lunes – domingo: 09:30-00:00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Basílica de Jesús del Gran Poder</h3>
+          <p class="muted">Justo al lado de la Iglesia en la que nos casamos, se encuentra esta Basílica que merece la pena ser visitada por dentro.</p>
+          <p class="small"><strong>Dirección:</strong> Pl. San Lorenzo, 13, Casco Antiguo, 41002, Sevilla</p>
+          <p class="small"><strong>Horario:</strong> lunes – jueves: 08:00-13:00 y 18:00-21:00; viernes: 07:30-14:00 y 17:00-22:00; sábados y domingos: 09:00-13:30 y 18:00-21:00</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Plaza de toros La Maestranza</h3>
+          <p class="muted">Plaza de toros de Sevilla, declarada Bien de Interés Cultural. Podéis verla desde fuera o visitarla por dentro.</p>
+          <p class="muted">La entrada cuesta 10€.</p>
+          <p class="small"><strong>Dirección:</strong> P.º de Cristóbal Colón, 12, 41001 Sevilla</p>
+          <p class="small"><strong>Horario:</strong> Lunes – Domingo 09:30 h – 21:00 h; días de espectáculos taurinos 09:30 h – 15:00 h</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Torre del Oro y recorrido río Guadalquivir</h3>
+          <p class="muted">Recomendamos ver la Torre del Oro desde fuera.</p>
+          <p class="small"><strong>Dirección:</strong> Paseo de Cristóbal Colón, s/n, Casco Antiguo, 41001, Sevilla</p>
+        </div>
+
+        <div class="tour-item">
+          <h3>Plaza de España y Parque de María Luisa</h3>
+          <p class="muted">Recomendamos recorrer los jardines del Parque de María Luisa hasta llegar a la Plaza de España.</p>
+          <p class="small"><strong>Dirección:</strong> Avenida de Isabel la Católica, s/n, 41004</p>
+          <p class="small"><strong>Horario:</strong> lunes - domingo: 08:00 - 00:00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GETTING READY -->
+    <section id="getting-ready" class="section">
+      <div class="section__head">
+        <h2>Getting ready</h2>
+        <p class="muted">Lo dejamos para que puedas editar el contenido cuando quieras.</p>
+      </div>
+
+      <div class="card" id="gettingReadyBox">
+        <h3>Salones de belleza / Peluquería</h3>
+        <p class="muted">Añade direcciones, teléfonos y horarios (edítalo en <strong>script.js</strong> o aquí).</p>
+        <ul class="list" id="gettingReadyList">
+          <li>(Edítame) Peluquería 1 — dirección — teléfono — horario</li>
+          <li>(Edítame) Uñas 1 — dirección — teléfono — horario</li>
+          <li>(Edítame) Tintorería 1 — dirección — teléfono — horario</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="section__head">
+        <h2>Q&amp;A</h2>
+        <p class="muted">Preguntas frecuentes (editable).</p>
+      </div>
+
+      <div class="accordion" id="faqBox">
+        <details class="acc" open>
+          <summary>¿Cuándo confirmar?</summary>
+          <p>Agradeceríamos que confirmaseis lo antes posible.</p>
+        </details>
+        <details class="acc">
+          <summary>¿Hay autobús?</summary>
+          <p>Sí: salida Iglesia → Hacienda a las 14:15h, y vuelta Hacienda → Sevilla a las 22:30h, 00:30h y 02:30h.</p>
+        </details>
+        <details class="acc">
+          <summary>¿Hay opciones de menú / alergias?</summary>
+          <p>Cuéntanoslo en el formulario de confirmación.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
+      <div class="section__head">
+        <h2>Confirmar asistencia</h2>
+        <p class="muted">Formulario tipo RSVP (conexión a Google Sheets configurable).</p>
+      </div>
+
+      <form class="card form" id="rsvpForm">
+        <div class="row">
+          <label>Nombre y apellidos
+            <input name="nombre" required placeholder="Ej. Ana Pérez" />
+          </label>
+          <label>Teléfono / Email
+            <input name="contacto" required placeholder="Ej. 600 000 000 / ana@email.com" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>¿Asistirás?
+            <select name="asistencia" required>
+              <option value="" disabled selected>Selecciona…</option>
+              <option value="Si">¡Sí, allí estaré! ✅</option>
+              <option value="No">No puedo 😢</option>
+            </select>
+          </label>
+
+          <label>Nº de acompañantes
+            <input type="number" name="acompanantes" min="0" max="6" value="0" />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>¿Alergias / preferencias?
+            <input name="alergias" placeholder="Ej. sin gluten, vegano, etc." />
+          </label>
+
+          <label>Autobús
+            <select name="bus">
+              <option value="No">No</option>
+              <option value="Si (Iglesia → Hacienda)">Sí (Iglesia → Hacienda)</option>
+              <option value="Si (Vuelta Hacienda → Sevilla)">Sí (Vuelta Hacienda → Sevilla)</option>
+              <option value="Si (Ida y vuelta)">Sí (Ida y vuelta)</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Mensaje (opcional)
+          <textarea name="mensaje" rows="4" placeholder="Déjanos un mensaje bonito 💛"></textarea>
+        </label>
+
+        <div class="actions">
+          <button class="btn" type="submit">Enviar RSVP</button>
+          <span class="small muted" id="formMsg"></span>
+        </div>
+
+        <p class="small muted">* Si aún no has conectado Google Sheets, verás un mensaje de “pendiente”.</p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p class="small muted">© <span id="year"></span> · Yolanda & Álvaro · 21·11·2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
