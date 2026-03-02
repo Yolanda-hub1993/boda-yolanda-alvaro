@@ -78,6 +78,52 @@ main{ max-width: 1100px; margin: 0 auto; padding: 18px 16px 70px; }
   box-shadow: var(--shadow);
   position:relative;
   overflow:hidden;
+  
+  /* PORTADA: imagen de fondo + velo para leer el texto */
+  background:
+    linear-gradient(180deg, rgba(12, 14, 18, .55), rgba(12, 14, 18, .25)),
+    url("Playa.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* un alto de portada bonito y adaptable */
+  min-height: 520px;
+
+  /* el texto encima del fondo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Ajuste: texto en blanco para que contraste */
+.hero__inner h1,
+.hero__inner .meta,
+.hero__inner .kicker{
+  color: #fff;
+}
+
+/* El texto secundario un poco más suave */
+.hero__inner .meta{
+  opacity: .92;
+}
+.hero__inner .kicker{
+  opacity: .92;
+}
+
+/* Mantén el ampersand con tu color dorado */
+.amp{ color: var(--accent); }
+
+/* Botón “fantasma” visible sobre fondo */
+.btn--ghost{
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  border-color: rgba(255,255,255,.22);
+}
+
+/* Asegura que el botón principal se vea bien */
+.btn{
+  box-shadow: 0 12px 26px rgba(0,0,0,.18);
 }
 .hero__inner::after{
   content:"";
