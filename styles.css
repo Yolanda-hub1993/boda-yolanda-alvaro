@@ -69,6 +69,21 @@ main{ max-width: 1100px; margin: 0 auto; padding: 18px 16px 70px; }
   background: radial-gradient(circle at 30% 30%, rgba(176,138,90,.25), transparent 60%);
   transform: rotate(12deg);
 }
+
+.hero__photo{
+  margin-top: 18px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow);
+  background: rgba(255,255,255,.5);
+}
+
+.hero__photo img{
+  width: 100%;
+  height: clamp(240px, 42vw, 420px);
+  object-fit: cover;
+  display: block;
 .kicker{ text-transform: uppercase; letter-spacing:.08em; font-size:.82rem; color:var(--accent2); }
 .meta{ margin-top:6px; }
 .amp{ color: var(--accent); }
