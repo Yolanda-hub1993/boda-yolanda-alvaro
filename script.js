@@ -20,7 +20,7 @@ const HOTELS = [
     url: "...",
   },
   {
-    name: "AC Hotel Ciudad de Sevilla,
+    name: "AC Hotel Ciudad de Sevilla",
     stars: "****",
     address: "Avenida Manuel Siurot 25, 41013 Sevilla",
     note: "A 5 min andando de la Iglesia",
@@ -32,9 +32,9 @@ const HOTELS = [
     stars: "****",
     address: "Avenida de la Constitución 8, 41001 Sevilla",
     phone: "854 85 60 59",
-    url: "..."
+    url: "...",
     email: "info@sohohoteles.com",
-    discount: "20% de descuento- enviar email a info@sohohoteles.com"
+    discount: "20% de descuento- enviar email a info@sohohoteles.com",
   },
   {
     name: "Hotel América",
@@ -42,7 +42,7 @@ const HOTELS = [
     address: "Plaza del Duque de la Victoria 9, 41002 Sevilla",
     phone: "954 22 09 51",
     url: "hotelamericasevilla.com",
-    discount: "10% de descuento- código BODAYOLANDAYALVARO"
+    discount: "10% de descuento- código BODAYOLANDAYALVARO",
   },
   {
     name: "Hotel Hesperia",
