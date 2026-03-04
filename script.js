@@ -112,7 +112,7 @@ burger?.addEventListener("click", () => {
 });
 
 // ======= Footer año =======
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year")?.textContent = new Date().getFullYear();
 
 // ======= Pintar paradas de bus =======
 const bus1 = document.getElementById("busStops1");
@@ -130,7 +130,7 @@ function renderHotels(){
     <article class="card">
       <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars}</span></h3>
       <p class="muted">${h.address}</p>
-      <p class="muted">${h.note}</p>
+      ${h.note ? `<p class="muted">${h.note}</p>` : ``}
       <p class="small">
         <a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>
         ${h.phone ? `<span class="muted">Tel: ${h.phone}</span><br/>` : ``}
@@ -165,12 +165,16 @@ function startCountdown(){
   if(!el) return;
 
   const targetStr = el.getAttribute("data-date");
+  
   const target = new Date(targetStr).getTime();
 
   const d = document.getElementById("d");
   const h = document.getElementById("h");
   const m = document.getElementById("m");
   const s = document.getElementById("s");
+
+  if (!d || !h || !m || !s || Number.isNaN(target)) return;
+
 
   const tick = () => {
     const now = Date.now();
