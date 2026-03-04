@@ -15,7 +15,7 @@ const HOTELS = [
   {
     name: "Hotel Meliá Sevilla",
     stars: "****",
-    address: "Calle Dr. Pedro de Castro 1, 41004 Sevilla",
+    address: "Calle Doctor Pedro de Castro 1, 41004 Sevilla",
     phone: "954 42 15 11",
     url: "...",
   },
