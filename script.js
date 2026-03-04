@@ -10,38 +10,90 @@ const BUS_STOPS = {
   back_0230: "Puntos de parada: (edítame aquí)"
 };
 
-// 3) Alojamientos (PLANTILLA PARA QUE LA EDITES)
+// 3) Alojamientos 
 const HOTELS = [
   {
-    name: "Hotel (edítame) 1",
+    name: "Hotel Meliá Sevilla",
     stars: "****",
-    address: "Dirección…",
-    note: "A X min andando de…",
-    url: "https://example.com",
-    phone: "000 00 00 00",
-    email: "hotel@email.com",
-    discount: "CÓDIGO / instrucciones (opcional)"
+    address: "Calle Dr. Pedro de Castro 1, 41004 Sevilla",
+    phone: "954 42 15 11",
+    web page: "***"
   },
   {
-    name: "Hotel (edítame) 2",
-    stars: "***",
-    address: "Dirección…",
-    note: "A X min andando de…",
-    url: "https://example.com",
-    phone: "000 00 00 00",
-    email: "hotel@email.com",
-    discount: "CÓDIGO / instrucciones (opcional)"
+    name: "AC Hotel Ciudad de Sevilla,
+    stars: "****",
+    address: "Avenida Manuel Siurot 25, 41013 Sevilla",
+    note: "A 5 min andando de la Iglesia",
+    phone: "954 23 05 05",
+    web page: "***"
   },
   {
-    name: "Hotel (edítame) 3",
+    name: "Hotel Soho Boutique Catedral",
     stars: "****",
-    address: "Dirección…",
-    note: "A X min andando de…",
-    url: "https://example.com",
-    phone: "000 00 00 00",
-    email: "hotel@email.com",
-    discount: "CÓDIGO / instrucciones (opcional)"
-  }
+    address: "Avenida de la Constitución 8, 41001 Sevilla",
+    phone: "854 85 60 59",
+    web page: "***"
+    email: "info@sohohoteles.com",
+    discount: "20% de descuento- enviar email a info@sohohoteles.com"
+  },
+  {
+    name: "Hotel América",
+    stars: "****",
+    address: "Plaza del Duque de la Victoria 9, 41002 Sevilla",
+    phone: "954 22 09 51",
+    web page: "hotelamericasevilla.com",
+    discount: "10% de descuento- código BODAYOLANDAYALVARO"
+  },
+  {
+    name: "Hotel Hesperia",
+    stars: "****",
+    address: "Avenida Eduardo Dato 49, 41018 Sevilla",
+    phone: "954 54 83 00",
+    web page: "hesperia.com/hotel-hesperia-sevilla/"
+    discount: "10% de descuento- código YOLANDAYALVARO"
+  },
+  {
+    name: "Hotel Sevilla Center",
+    stars: "****",
+    address: "Avenida de la Buhaira 24, 41018 Sevilla",
+    phone: "954 54 95 00",
+    web page: "***"
+  },
+  {
+    name: "Hotel Giralda Center",
+    stars: "****",
+    address: "Calle Juan de Mata Carriazo 7, 41018 Sevilla",
+    phone: "954 56 14 14",
+    web page: "***"
+  },
+  {
+    name: "Halo Boutique Hotel Sevilla",
+    stars: "****",
+    address: "Calle Gloria 3, 41004 Sevilla",
+    phone: "954 56 33 56",
+    web page: "***"
+  },
+  {
+    name: "H10 Casa de la Plata",
+    stars: "****",
+    address: "Calle Lagar 2, 41004 Sevilla",
+    phone: "954 54 87 12",
+    web page: "***"
+  },
+    {
+    name: "Hotel Tayko Sevilla",
+    stars: "****",
+    address: "Puerta de Jerez 3, 41004 Sevilla",
+    phone: "955 83 00 47",
+    web page: "***"
+  },
+      {
+    name: "Hotel Zenit Sevilla",
+    stars: "****",
+    address: "Calle Pagés del Corro 90B, 41010 Sevilla",
+    phone: "954 34 74 34",
+    web page: "***"
+  },
 ];
 
 // 4) Enlaces “Dónde comer” (pendientes)
