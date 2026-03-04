@@ -214,7 +214,7 @@ form?.addEventListener("submit", async (e) => {
     nombre: fd.get("nombre") || "",
     contacto: fd.get("contacto") || "",
     asistencia: fd.get("asistencia") || "",
-    acompanantes: fd.get("acompanantes") || "0",
+    acompananteNombre: fd.get("acompananteNombre") || "",
     alergias: fd.get("alergias") || "",
     bus: fd.get("bus") || "",
     mensaje: fd.get("mensaje") || ""
