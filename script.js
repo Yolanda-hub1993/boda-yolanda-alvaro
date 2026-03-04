@@ -102,6 +102,7 @@ const LINKS = {
   party: "#"  // cuando tengas el enlace, pégalo aquí
 };
 
+
 // ======= Menú móvil =======
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav");
@@ -110,6 +111,7 @@ burger?.addEventListener("click", () => {
   const open = nav.classList.toggle("is-open");
   burger.setAttribute("aria-expanded", open ? "true" : "false");
 });
+
 
 // ======= Footer año =======
 document.getElementById("year")?.textContent = new Date().getFullYear();
@@ -122,17 +124,20 @@ if (bus1) bus1.textContent = BUS_STOPS.back_2230;
 if (bus2) bus2.textContent = BUS_STOPS.back_0030;
 if (bus3) bus3.textContent = BUS_STOPS.back_0230;
 
+
 // ======= Pintar hoteles =======
 const hotelsGrid = document.getElementById("hotelsGrid");
-function renderHotels(){
-  if(!hotelsGrid) return;
+
+function renderHotels() {
+  if (!hotelsGrid) return;
+
   hotelsGrid.innerHTML = HOTELS.map(h => `
     <article class="card">
-      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars}</span></h3>
-      <p class="muted">${h.address}</p>
+      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars || ""}</span></h3>
+      <p class="muted">${h.address || ""}</p>
       ${h.note ? `<p class="muted">${h.note}</p>` : ``}
       <p class="small">
-        <a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>
+        ${h.url && h.url !== "***" ? `<a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>` : ``}
         ${h.phone ? `<span class="muted">Tel: ${h.phone}</span><br/>` : ``}
         ${h.email ? `<span class="muted">Email: ${h.email}</span>` : ``}
       </p>
@@ -140,7 +145,10 @@ function renderHotels(){
     </article>
   `).join("");
 }
+
 renderHotels();
+``
+
 
 // ======= Enlaces “Dónde comer” =======
 const foodLink = document.getElementById("foodLink");
@@ -148,16 +156,18 @@ const partyLink = document.getElementById("partyLink");
 if(foodLink) foodLink.href = LINKS.food;
 if(partyLink) partyLink.href = LINKS.party;
 
+
 // ======= Copiar IBAN =======
 document.getElementById("copyIban")?.addEventListener("click", async () => {
   const text = document.getElementById("iban").textContent.trim();
-  try{
+  try {
     await navigator.clipboard.writeText(text);
     alert("Cuenta copiada ✅");
-  }catch(e){
+  } catch (e) {
     alert("No se pudo copiar. Selecciónalo manualmente.");
   }
 });
+
 
 // ======= Countdown =======
 function startCountdown(){
@@ -198,6 +208,7 @@ function startCountdown(){
   setInterval(tick, 1000);
 }
 startCountdown();
+
 
 // ======= RSVP (si no hay endpoint, muestra aviso) =======
 const form = document.getElementById("rsvpForm");
@@ -246,3 +257,4 @@ form?.addEventListener("submit", async (e) => {
     console.error(err);
   }
 });
+
