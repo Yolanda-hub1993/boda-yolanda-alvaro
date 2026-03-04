@@ -18,15 +18,15 @@ const HOTELS = [
     stars: "****",
     address: "Calle Dr. Pedro de Castro 1, 41004 Sevilla",
     phone: "954 42 15 11",
-    url: "***",
+    url: "***"
   },
   {
     name: "AC Hotel Ciudad de Sevilla",
     stars: "****",
     address: "Avenida Manuel Siurot 25, 41013 Sevilla",
-    note: "A 5 minutos andando de la Iglesia",
+    note: "A 5 min andando de la Iglesia",
     phone: "954 23 05 05",
-    url: "***",
+    url: "***"
   },
   {
     name: "Hotel Soho Boutique Catedral",
@@ -58,42 +58,42 @@ const HOTELS = [
     stars: "****",
     address: "Avenida de la Buhaira 24, 41018 Sevilla",
     phone: "954 54 95 00",
-    url: "***",
+    url: "***"
   },
   {
     name: "Hotel Giralda Center",
     stars: "****",
     address: "Calle Juan de Mata Carriazo 7, 41018 Sevilla",
     phone: "954 56 14 14",
-    url: "***",
+    url: "***"
   },
   {
     name: "Halo Boutique Hotel Sevilla",
     stars: "****",
     address: "Calle Gloria 3, 41004 Sevilla",
     phone: "954 56 33 56",
-    url: "***",
+    url: "***"
   },
   {
     name: "H10 Casa de la Plata",
     stars: "****",
     address: "Calle Lagar 2, 41004 Sevilla",
     phone: "954 54 87 12",
-    url: "***",
+    url: "***"
   },
   {
     name: "Hotel Tayko Sevilla",
     stars: "****",
     address: "Puerta de Jerez 3, 41004 Sevilla",
     phone: "955 83 00 47",
-    url: "***",
+    url: "***"
   },
   {
     name: "Hotel Zenit Sevilla",
     stars: "****",
     address: "Calle Pagés del Corro 90B, 41010 Sevilla",
     phone: "954 34 74 34",
-    url: "***",
+    url: "***"
   }
 ];
 // 4) Enlaces “Dónde comer” (pendientes)
@@ -101,7 +101,6 @@ const LINKS = {
   food: "#",  // cuando tengas el enlace, pégalo aquí
   party: "#"  // cuando tengas el enlace, pégalo aquí
 };
-
 
 // ======= Menú móvil =======
 const burger = document.querySelector(".burger");
@@ -112,9 +111,8 @@ burger?.addEventListener("click", () => {
   burger.setAttribute("aria-expanded", open ? "true" : "false");
 });
 
-
 // ======= Footer año =======
-document.getElementById("year")?.textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
 // ======= Pintar paradas de bus =======
 const bus1 = document.getElementById("busStops1");
@@ -124,20 +122,17 @@ if (bus1) bus1.textContent = BUS_STOPS.back_2230;
 if (bus2) bus2.textContent = BUS_STOPS.back_0030;
 if (bus3) bus3.textContent = BUS_STOPS.back_0230;
 
-
 // ======= Pintar hoteles =======
 const hotelsGrid = document.getElementById("hotelsGrid");
-
-function renderHotels() {
-  if (!hotelsGrid) return;
-
+function renderHotels(){
+  if(!hotelsGrid) return;
   hotelsGrid.innerHTML = HOTELS.map(h => `
     <article class="card">
-      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars || ""}</span></h3>
-      <p class="muted">${h.address || ""}</p>
-      ${h.note ? `<p class="muted">${h.note}</p>` : ``}
+      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars}</span></h3>
+      <p class="muted">${h.address}</p>
+      <p class="muted">${h.note}</p>
       <p class="small">
-        ${h.url && h.url !== "***" ? `<a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>` : ``}
+        <a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>
         ${h.phone ? `<span class="muted">Tel: ${h.phone}</span><br/>` : ``}
         ${h.email ? `<span class="muted">Email: ${h.email}</span>` : ``}
       </p>
@@ -145,10 +140,7 @@ function renderHotels() {
     </article>
   `).join("");
 }
-
 renderHotels();
-``
-
 
 // ======= Enlaces “Dónde comer” =======
 const foodLink = document.getElementById("foodLink");
@@ -156,18 +148,16 @@ const partyLink = document.getElementById("partyLink");
 if(foodLink) foodLink.href = LINKS.food;
 if(partyLink) partyLink.href = LINKS.party;
 
-
 // ======= Copiar IBAN =======
 document.getElementById("copyIban")?.addEventListener("click", async () => {
   const text = document.getElementById("iban").textContent.trim();
-  try {
+  try{
     await navigator.clipboard.writeText(text);
     alert("Cuenta copiada ✅");
-  } catch (e) {
+  }catch(e){
     alert("No se pudo copiar. Selecciónalo manualmente.");
   }
 });
-
 
 // ======= Countdown =======
 function startCountdown(){
@@ -175,16 +165,12 @@ function startCountdown(){
   if(!el) return;
 
   const targetStr = el.getAttribute("data-date");
-  
   const target = new Date(targetStr).getTime();
 
   const d = document.getElementById("d");
   const h = document.getElementById("h");
   const m = document.getElementById("m");
   const s = document.getElementById("s");
-
-  if (!d || !h || !m || !s || Number.isNaN(target)) return;
-
 
   const tick = () => {
     const now = Date.now();
@@ -208,7 +194,6 @@ function startCountdown(){
   setInterval(tick, 1000);
 }
 startCountdown();
-
 
 // ======= RSVP (si no hay endpoint, muestra aviso) =======
 const form = document.getElementById("rsvpForm");
