@@ -17,7 +17,7 @@ const HOTELS = [
     stars: "****",
     address: "Calle Dr. Pedro de Castro 1, 41004 Sevilla",
     phone: "954 42 15 11",
-    url: "***",
+    url: "...",
   },
   {
     name: "AC Hotel Ciudad de Sevilla,
@@ -25,14 +25,14 @@ const HOTELS = [
     address: "Avenida Manuel Siurot 25, 41013 Sevilla",
     note: "A 5 min andando de la Iglesia",
     phone: "954 23 05 05",
-    url: "***",
+    url: "...",
   },
   {
     name: "Hotel Soho Boutique Catedral",
     stars: "****",
     address: "Avenida de la Constitución 8, 41001 Sevilla",
     phone: "854 85 60 59",
-    url: "***"
+    url: "..."
     email: "info@sohohoteles.com",
     discount: "20% de descuento- enviar email a info@sohohoteles.com"
   },
@@ -57,42 +57,42 @@ const HOTELS = [
     stars: "****",
     address: "Avenida de la Buhaira 24, 41018 Sevilla",
     phone: "954 54 95 00",
-    url: "***",
+    url: "...",
   },
   {
     name: "Hotel Giralda Center",
     stars: "****",
     address: "Calle Juan de Mata Carriazo 7, 41018 Sevilla",
     phone: "954 56 14 14",
-    url: "***",
+    url: "...",
   },
   {
     name: "Halo Boutique Hotel Sevilla",
     stars: "****",
     address: "Calle Gloria 3, 41004 Sevilla",
     phone: "954 56 33 56",
-    url: "***",
+    url: "...",
   },
   {
     name: "H10 Casa de la Plata",
     stars: "****",
     address: "Calle Lagar 2, 41004 Sevilla",
     phone: "954 54 87 12",
-    url: "***",
+    url: "...",
   },
     {
     name: "Hotel Tayko Sevilla",
     stars: "****",
     address: "Puerta de Jerez 3, 41004 Sevilla",
     phone: "955 83 00 47",
-    url: "***",
+    url: "...",
   },
       {
     name: "Hotel Zenit Sevilla",
     stars: "****",
     address: "Calle Pagés del Corro 90B, 41010 Sevilla",
     phone: "954 34 74 34",
-    url: "***",
+    url: "...",
   },
 ];
 
