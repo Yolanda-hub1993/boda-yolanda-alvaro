@@ -24,7 +24,7 @@ const HOTELS = [
     name: "AC Hotel Ciudad de Sevilla",
     stars: "****",
     address: "Avenida Manuel Siurot 25, 41013 Sevilla",
-    note: "A 5 min andando de la Iglesia",
+    note: "A 5 minutos andando de la Iglesia",
     phone: "954 23 05 05",
     url: "***"
   },
