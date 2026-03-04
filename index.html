@@ -339,7 +339,7 @@
       <form class="card form" id="rsvpForm">
         <div class="row">
           <label>Nombre y apellidos
-            <input name="nombre" required placeholder="Ej. Ana Pérez" />
+            <input name="nombre" required placeholder="Ej. Paula Albendea López" />
           </label>
           <label>Teléfono / Email
             <input name="contacto" required placeholder="Ej. 600 000 000 / ana@email.com" />
@@ -356,7 +356,15 @@
           </label>
 
           <label>Nº de acompañantes
-            <input type="number" name="acompanantes" min="0" max="6" value="0" />
+            
+          <label for="acompananteNombre">Nombre y apellidos del acompañante (opcional)</label>
+            <input
+              id="acompananteNombre"
+              name="acompananteNombre"
+              type="text"
+              placeholder="Ej.: Estela Albendea López"
+              />
+
           </label>
         </div>
 
@@ -393,6 +401,6 @@
     </footer>
   </main>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
