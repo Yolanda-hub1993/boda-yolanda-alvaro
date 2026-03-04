@@ -130,7 +130,7 @@ function renderHotels(){
     <article class="card">
       <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars}</span></h3>
       <p class="muted">${h.address}</p>
-      <p class="muted">${h.note}</p>
+      ${h.note ? `<p class="muted">${h.note}</p>` : ``}
       <p class="small">
         <a class="link" href="${h.url}" target="_blank" rel="noreferrer">Web →</a><br/>
         ${h.phone ? `<span class="muted">Tel: ${h.phone}</span><br/>` : ``}
