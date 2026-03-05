@@ -5,8 +5,8 @@ const RSVP_ENDPOINT = ""; // Ejemplo: https://script.google.com/macros/s/XXXX/ex
 // ======= DATOS EDITABLES =======
 // 2) Paradas del autobús de vuelta (EDITABLES)
 const BUS_STOPS = {
-  back_2230: "Puntos de parada: (edítame aquí)",
-  back_0030: "Puntos de parada: (edítame aquí)",
+  back_2130: "Puntos de parada: (edítame aquí)",
+  back_0000: "Puntos de parada: (edítame aquí)",
   back_0230: "Puntos de parada: (edítame aquí)"
 };
 
