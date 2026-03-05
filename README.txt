@@ -4,7 +4,6 @@
 - Descarga este ZIP y descomprímelo.
 - Abre `index.html` en tu navegador.
 
-
 ## 2) Publicar GRATIS en GitHub Pages
 1. Crea un repositorio en GitHub (público), por ejemplo `boda-yolanda-alvaro`.
 2. Sube `index.html`, `styles.css` y `script.js`.
