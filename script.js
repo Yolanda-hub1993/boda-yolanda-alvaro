@@ -118,8 +118,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const bus1 = document.getElementById("busStops1");
 const bus2 = document.getElementById("busStops2");
 const bus3 = document.getElementById("busStops3");
-if (bus1) bus1.textContent = BUS_STOPS.back_2230;
-if (bus2) bus2.textContent = BUS_STOPS.back_0030;
+if (bus1) bus1.textContent = BUS_STOPS.back_2130;
+if (bus2) bus2.textContent = BUS_STOPS.back_0000;
 if (bus3) bus3.textContent = BUS_STOPS.back_0230;
 
 // ======= Pintar hoteles =======
