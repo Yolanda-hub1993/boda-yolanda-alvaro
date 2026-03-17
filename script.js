@@ -24,8 +24,8 @@ const HOTELS = [
     stars: "****",
     address: "Avenida de la Constitución 8, 41001 Sevilla",
     phone: "854 85 60 59",
-    url: "sohohoteles.com/destinos/hotel-soho-boutique-catedral-4/",
-    email: "https://info@sohohoteles.com",
+    url: "https://sohohoteles.com/destinos/hotel-soho-boutique-catedral-4/",
+    email: "info@sohohoteles.com",
     discount: "20% de descuento- enviar email a info@sohohoteles.com",
   },
   {
