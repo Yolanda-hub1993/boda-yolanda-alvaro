@@ -1,5 +1,4 @@
 // ======= CONFIGURACIÓN RSVP (Google Sheets) =======
-// 1) Crea tu Apps Script como Web App y pega aquí la URL /exec
 const RSVP_ENDPOINT = ""; // Ejemplo: https://script.google.com/macros/s/XXXX/exec
 
 // ======= DATOS EDITABLES =======
@@ -73,14 +72,14 @@ const HOTELS = [
     phone: "954 54 87 12",
     url: "https://www.h10hotels.com/en/seville-hotels/h10-casa-de-la-plata",
   },
-    {
+  {
     name: "Hotel Tayko Sevilla",
     stars: "****",
     address: "Puerta de Jerez 3, 41004 Sevilla",
     phone: "955 83 00 47",
     url: "https://taykohotels.com/sevilla/",
   },
-      {
+  {
     name: "Hotel Zenit Sevilla",
     stars: "****",
     address: "Calle Pagés del Corro 90B, 41010 Sevilla",
@@ -91,8 +90,8 @@ const HOTELS = [
 
 // 3) Enlaces “Dónde comer” (pendientes)
 const LINKS = {
-  food: "#",  // cuando tengas el enlace, pégalo aquí
-  party: "#"  // cuando tengas el enlace, pégalo aquí
+  food: "#",
+  party: "#"
 };
 
 // ======= Menú móvil =======
@@ -108,21 +107,21 @@ burger?.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // ======= Pintar paradas de bus =======
-const bus1 = document.getElementById("busStops1");
-const bus2 = document.getElementById("busStops2");
-const bus3 = document.getElementById("busStops3");
-if (bus1) bus1.textContent = BUS_STOPS.back_2130;
-if (bus2) bus2.textContent = BUS_STOPS.back_0000;
-if (bus3) bus3.textContent = BUS_STOPS.back_0230;
+// Comentado para que no rompa el script si BUS_STOPS no existe
+// const bus1 = document.getElementById("busStops1");
+// const bus2 = document.getElementById("busStops2");
+// const bus3 = document.getElementById("busStops3");
+// if (bus1) bus1.textContent = BUS_STOPS.back_2130;
+// if (bus2) bus2.textContent = BUS_STOPS.back_0000;
+// if (bus3) bus3.textContent = BUS_STOPS.back_0230;
 
 // ======= Pintar hoteles =======
-const hotelsGrid = document.getElementById("hotelsGrid");
 function renderHotels(){
   const hotelsGrid = document.getElementById("hotelsGrid");
   if(!hotelsGrid) return;
   hotelsGrid.innerHTML = HOTELS.map(h => `
     <article class="card">
-      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter"> ${h.stars}</span></h3>
+      <h3>${h.name} <span style="color:#5d6773;font-weight:600;font-family:Inter">${h.stars}</span></h3>
       <p class="muted">${h.address}</p>
       ${h.note ? `<p class="muted">${h.note}</p>` : ``}
       <p class="small">
@@ -135,7 +134,6 @@ function renderHotels(){
   `).join("");
 }
 
-// Asegura que se ejecute cuando el DOM esté cargado
 document.addEventListener("DOMContentLoaded", renderHotels);
 
 // ======= Enlaces “Dónde comer” =======
