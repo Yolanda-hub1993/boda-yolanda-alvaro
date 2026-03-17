@@ -257,10 +257,10 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
     flex-direction:column;
   }
 .hero__img {
-  width: 100%;          /* que ocupe todo el ancho disponible */
-  max-width: 600px;     /* límite máximo para que no quede gigante */
+  width: 80%;          /* que ocupe casi todo el ancho disponible */
+  max-width: 300px;     /* límite máximo para que no quede gigante */
   display: block;       /* para poder centrarlo */
-  margin: 20px auto 0;  /* espacio arriba y centrado horizontalmente */
+  margin: 50px auto 0;  /* espacio arriba y centrado horizontalmente */
   border-radius: 12px;  /* esquinas redondeadas */
   box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
 }
