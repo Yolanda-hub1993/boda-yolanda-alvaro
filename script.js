@@ -3,14 +3,7 @@
 const RSVP_ENDPOINT = ""; // Ejemplo: https://script.google.com/macros/s/XXXX/exec
 
 // ======= DATOS EDITABLES =======
-// 2) Paradas del autobús de vuelta (EDITABLES)
-const BUS_STOPS = {
-  back_2130: "Puntos de parada: (edítame aquí)",
-  back_0000: "Puntos de parada: (edítame aquí)",
-  back_0230: "Puntos de parada: (edítame aquí)"
-};
-
-// 3) Alojamientos 
+// 2) Alojamientos 
 const HOTELS = [
   {
     name: "Hotel Meliá Sevilla",
@@ -96,7 +89,7 @@ const HOTELS = [
   },
 ];
 
-// 4) Enlaces “Dónde comer” (pendientes)
+// 3) Enlaces “Dónde comer” (pendientes)
 const LINKS = {
   food: "#",  // cuando tengas el enlace, pégalo aquí
   party: "#"  // cuando tengas el enlace, pégalo aquí
