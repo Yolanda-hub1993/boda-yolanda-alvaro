@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 
 <body>
@@ -32,31 +32,29 @@
 
   <main>
     <!-- HERO -->
-   <section id="inicio" class="hero">
-  <div class="hero__inner">
-    <div class="hero__content">
-      <p class="kicker">¡Estamos deseando celebrar este día tan especial con vosotros!</p>
-      <h1>Yolanda <span class="amp">&amp;</span> Álvaro</h1>
-      <p class="meta">Sábado <strong>21</strong> de <strong>noviembre</strong>, <strong>2026</strong> · Sevilla, España</p>
+    <section id="inicio" class="hero">
+      <div class="hero__inner">
+        <p class="kicker">¡Estamos deseando celebrar este día tan especial con vosotros!</p>
+        <h1>Yolanda <span class="amp">&amp;</span> Álvaro</h1>
+        <p class="meta">Sábado <strong>21</strong> de <strong>noviembre</strong>, <strong>2026</strong> · Sevilla, España</p>
 
-      <div class="cta">
-        <a class="btn" href="#rsvp">Confirmar asistencia</a>
-        <a class="btn btn--ghost" href="#itinerario">Ver itinerario</a>
+        <div class="cta">
+          <a class="btn" href="#rsvp">Confirmar asistencia</a>
+          <a class="btn btn--ghost" href="#itinerario">Ver itinerario</a>
+        </div>
+
+        <!-- Cuenta atrás hasta la ceremonia (13:00) -->
+        <div class="countdown" data-date="2026-11-21T13:00:00+01:00">
+          <div class="cd"><span class="cd__num" id="d">--</span><span class="cd__lbl">Días</span></div>
+          <div class="cd"><span class="cd__num" id="h">--</span><span class="cd__lbl">Horas</span></div>
+          <div class="cd"><span class="cd__num" id="m">--</span><span class="cd__lbl">Min</span></div>
+          <div class="cd"><span class="cd__num" id="s">--</span><span class="cd__lbl">Seg</span></div>
+        </div>
+
+        <!-- Imagen después del contador -->
+        <img src="Playa.jpeg" alt="Yolanda & Álvaro" class="hero__img">
       </div>
-
-      <!-- Cuenta atrás -->
-      <div class="countdown" data-date="2026-11-21T13:00:00+01:00">
-        <div class="cd"><span class="cd__num" id="d">--</span><span class="cd__lbl">Días</span></div>
-        <div class="cd"><span class="cd__num" id="h">--</span><span class="cd__lbl">Horas</span></div>
-        <div class="cd"><span class="cd__num" id="m">--</span><span class="cd__lbl">Min</span></div>
-        <div class="cd"><span class="cd__num" id="s">--</span><span class="cd__lbl">Seg</span></div>
-      </div>
-    </div>
-
-    <!-- Imagen superpuesta -->
-    <img src="Playa.jpeg" alt="Yolanda & Álvaro" class="hero__img">
-  </div>
-</section>
+    </section>
 
     <!-- CEREMONIA / CELEBRACIÓN -->
     <section class="grid2">
@@ -195,6 +193,6 @@
     </footer>
   </main>
 
-  <script src="script.js?v=20"></script>
+  <script src="script.js?v=17"></script>
 </body>
 </html>
