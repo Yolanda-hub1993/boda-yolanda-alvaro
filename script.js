@@ -118,6 +118,7 @@ if (bus3) bus3.textContent = BUS_STOPS.back_0230;
 // ======= Pintar hoteles =======
 const hotelsGrid = document.getElementById("hotelsGrid");
 function renderHotels(){
+  const hotelsGrid = document.getElementById("hotelsGrid");
   if(!hotelsGrid) return;
   hotelsGrid.innerHTML = HOTELS.map(h => `
     <article class="card">
@@ -133,7 +134,9 @@ function renderHotels(){
     </article>
   `).join("");
 }
-renderHotels();
+
+// Asegura que se ejecute cuando el DOM esté cargado
+document.addEventListener("DOMContentLoaded", renderHotels);
 
 // ======= Enlaces “Dónde comer” =======
 const foodLink = document.getElementById("foodLink");
