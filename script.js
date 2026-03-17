@@ -25,7 +25,7 @@ const HOTELS = [
     address: "Avenida de la Constitución 8, 41001 Sevilla",
     phone: "854 85 60 59",
     url: "sohohoteles.com/destinos/hotel-soho-boutique-catedral-4/",
-    email: "info@sohohoteles.com",
+    email: "https://info@sohohoteles.com",
     discount: "20% de descuento- enviar email a info@sohohoteles.com",
   },
   {
@@ -33,7 +33,7 @@ const HOTELS = [
     stars: "****",
     address: "Plaza del Duque de la Victoria 9, 41002 Sevilla",
     phone: "954 22 09 51",
-    url: "hotelamericasevilla.com",
+    url: "https://hotelamericasevilla.com",
     discount: "10% de descuento- código BODAYOLANDAYALVARO",
   },
   {
@@ -41,7 +41,7 @@ const HOTELS = [
     stars: "****",
     address: "Avenida Eduardo Dato 49, 41018 Sevilla",
     phone: "954 54 83 00",
-    url: "hesperia.com/hotel-hesperia-sevilla/",
+    url: "https://hesperia.com/hotel-hesperia-sevilla/",
     discount: "10% de descuento- código YOLANDAYALVARO",
   },
   {
