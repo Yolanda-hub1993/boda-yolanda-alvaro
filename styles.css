@@ -256,7 +256,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
     padding: 12px;
     flex-direction:column;
   }
-}
 .hero__img {
   width: 100%;          /* que ocupe todo el ancho disponible */
   max-width: 600px;     /* límite máximo para que no quede gigante */
