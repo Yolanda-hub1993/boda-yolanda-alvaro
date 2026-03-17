@@ -265,14 +265,32 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   text-align: center;
 }
 
+.hero__inner {
+  position: relative; /* para que la imagen se pueda posicionar respecto a este contenedor */
+}
+
+.hero__content {
+  position: relative; 
+  z-index: 2; /* que nombres y contador queden encima del fondo */
+  text-align: center;
+}
+
 .hero__img {
   position: absolute;      /* para superponer dentro de hero__inner */
   left: 50%;               /* centrado horizontal */
   transform: translateX(-50%); /* ajustar centrado exacto */
-  top: 180px;              /* distancia desde la parte superior de hero__inner */
-  width: 300px;            /* tamaño de la imagen */
-  max-width: 80%;          /* responsive */
+  top: 200px;              /* distancia desde la parte superior de hero__inner */
+  width: 180px;            /* tamaño reducido */
+  max-width: 50%;          /* responsive, no crecer demasiado en pantallas grandes */
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
   z-index: 1;              /* por debajo de los textos */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 600px){
+  .hero__img {
+    width: 140px;          /* más pequeño en móviles */
+    top: 180px;            /* ajustar separación del texto si hace falta */
+  }
 }
