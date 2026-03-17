@@ -162,67 +162,70 @@
       </div>
     </section>
 
-    <!-- RSVP -->
-    <section id="rsvp" class="section">
-      <div class="section__head">
-        <h2>Confirmar asistencia</h2>
-        <p class="muted">Formulario tipo RSVP (conexión a Google Sheets configurable).</p>
-      </div>
+  <!-- RSVP -->
+<section id="rsvp" class="section">
+  <div class="section__head">
+    <h2>Confirmar asistencia</h2>
+    <p class="muted">Formulario tipo RSVP (conexión a Google Sheets configurable).</p>
+  </div>
 
-      <form class="card form" id="rsvpForm">
-        <div class="row">
-          <label>Nombre y apellidos
-            <input name="nombre" required placeholder="Ej. Paula Albendea López" />
-          </label>
-        </div>
+  <form class="card form" id="rsvpForm">
+    <div class="row">
+      <label>Nombre y apellidos
+        <input name="nombre" required placeholder="Ej. Paula Albendea López" />
+      </label>
+    </div>
 
-        <div class="row">
-          <label>¿Asistirás?
-            <select name="asistencia" required>
-              <option value="" disabled selected>Selecciona…</option>
-              <option value="Si">¡Sí, allí estaré! ✅</option>
-              <option value="No">No puedo 😢</option>
-            </select>
-          </label>
-          
-        <div class="form-group">
-          <label for="acompanantes">Nombre y apellidos del acompañante (opcional)</label>
-          <input id="acompanantes" name="acompanantes" type="text" placeholder="Ej. Estela Albendea López" />
-        </div>
+    <div class="row">
+      <label>¿Asistirás?
+        <select name="asistencia" required>
+          <option value="" disabled selected>Selecciona…</option>
+          <option value="Si">¡Sí, allí estaré! ✅</option>
+          <option value="No">No puedo 😢</option>
+        </select>
+      </label>
+    </div>
 
-        <div class="row">
-          <label>¿Alergias / preferencias?
-            <input name="alergias" placeholder="Ej. sin gluten, vegano, etc." />
-          </label>
+    <div class="form-group">
+      <label for="acompanantes">Nombre y apellidos del acompañante (opcional)</label>
+      <input id="acompanantes" name="acompanantes" type="text" placeholder="Ej. Estela Albendea López" />
+    </div>
 
-          <label>Autobús
-            <select name="bus">
-              <option value="No">No</option>
-              <option value="Si (Iglesia → Hacienda)">Sí (Iglesia → Hacienda)</option>
-              <option value="Si (Vuelta Hacienda → Sevilla)">Sí (Vuelta Hacienda → Sevilla)</option>
-              <option value="Si (Ida y vuelta)">Sí (Ida y vuelta)</option>
-            </select>
-          </label>
-        </div>
+    <div class="row">
+      <label>¿Alergias / preferencias?
+        <input name="alergias" placeholder="Ej. sin gluten, vegano, etc." />
+      </label>
 
-        <label>Mensaje (opcional)
-          <textarea name="mensaje" rows="4" placeholder="Déjanos cualquier comentario 💛"></textarea>
-        </label>
+      <label>Autobús
+        <select name="bus">
+          <option value="No">No</option>
+          <option value="Si (Iglesia → Hacienda)">Sí (Iglesia → Hacienda)</option>
+          <option value="Si (Vuelta Hacienda → Sevilla)">Sí (Vuelta Hacienda → Sevilla)</option>
+          <option value="Si (Ida y vuelta)">Sí (Ida y vuelta)</option>
+        </select>
+      </label>
+    </div>
 
-        <div class="actions">
-          <button class="btn" type="submit">Enviar RSVP</button>
-          <span class="small muted" id="formMsg"></span>
-        </div>
+    <div class="row">
+      <label>Mensaje (opcional)
+        <textarea name="mensaje" rows="4" placeholder="Déjanos cualquier comentario 💛"></textarea>
+      </label>
+    </div>
 
-        <p class="small muted">* Si aún no has conectado Google Sheets, verás un mensaje de “pendiente”.</p>
-      </form>
-    </section>
+    <div class="actions">
+      <button class="btn" type="submit">Enviar RSVP</button>
+      <span class="small muted" id="formMsg"></span>
+    </div>
 
-    <footer class="footer">
-      <p class="small muted">© <span id="year"></span> · Yolanda & Álvaro · 21·11·2026</p>
-    </footer>
+    <p class="small muted">* Si aún no has conectado Google Sheets, verás un mensaje de “pendiente”.</p>
+  </form>
+</section>
+
+<footer class="footer">
+  <p class="small muted">© <span id="year"></span> · Yolanda & Álvaro · 21·11·2026</p>
+</footer>
   </main>
 
-  <script src="script.js?v=32"></script>
+  <script src="script.js?v=33"></script>
 </body>
 </html>
