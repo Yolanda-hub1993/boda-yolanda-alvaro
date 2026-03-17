@@ -255,12 +255,24 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
     border-radius: 16px;
     padding: 12px;
     flex-direction:column;
-  }
+.hero__inner {
+  position: relative; /* para que la imagen se pueda posicionar respecto a este contenedor */
+}
+
+.hero__content {
+  position: relative; 
+  z-index: 2; /* que nombres y contador queden encima del fondo */
+  text-align: center;
+}
+
 .hero__img {
-  width: 80%;          /* que ocupe casi todo el ancho disponible */
-  max-width: 300px;     /* límite máximo para que no quede gigante */
-  display: block;       /* para poder centrarlo */
-  margin: 50px auto 0;  /* espacio arriba y centrado horizontalmente */
-  border-radius: 12px;  /* esquinas redondeadas */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* sombra suave */
+  position: absolute;      /* para superponer dentro de hero__inner */
+  left: 50%;               /* centrado horizontal */
+  transform: translateX(-50%); /* ajustar centrado exacto */
+  top: 180px;              /* distancia desde la parte superior de hero__inner */
+  width: 300px;            /* tamaño de la imagen */
+  max-width: 80%;          /* responsive */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  z-index: 1;              /* por debajo de los textos */
 }
