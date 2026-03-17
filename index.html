@@ -52,7 +52,7 @@
         </div>
 
         <!-- Imagen después del contador -->
-        <img src="images/Playa.jpeg" alt="Yolanda & Álvaro" class="hero__img">
+        <img src="Playa.jpeg" alt="Yolanda & Álvaro" class="hero__img">
       </div>
     </section>
 
@@ -122,30 +122,6 @@
           Habrá autobús <strong>desde la puerta de la Iglesia</strong> hacia la Hacienda a las <strong>14:15h</strong>.
           A la vuelta, habrá autobuses desde la Hacienda hacia distintos puntos de Sevilla y en distintos horarios.
         </p>
-
-        <div class="bus-grid">
-          <div class="bus-item">
-            <div class="bus-time">21:30h</div>
-            <div class="bus-desc">
-              <strong>Hacienda → Sevilla</strong>
-              <span class="muted" id="busStops1"></span>
-            </div>
-          </div>
-          <div class="bus-item">
-            <div class="bus-time">00:00h</div>
-            <div class="bus-desc">
-              <strong>Hacienda → Sevilla</strong>
-              <span class="muted" id="busStops2"></span>
-            </div>
-          </div>
-          <div class="bus-item">
-            <div class="bus-time">02:30h</div>
-            <div class="bus-desc">
-              <strong>Hacienda → Sevilla</strong>
-              <span class="muted" id="busStops3"></span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -155,7 +131,6 @@
         <h2>Regalo</h2>
         <p class="muted">Vuestra presencia es el mejor regalo. Si queréis tener un detalle adicional…</p>
       </div>
-
       <div class="card">
         <div class="iban">
           <span class="iban__lbl">Cuenta bancaria</span>
@@ -189,32 +164,11 @@
       </div>
     </section>
 
-    <!-- TURISMO -->
-    <section id="turismo" class="section">
-      <div class="section__head">
-        <h2>Turismo</h2>
-        <p class="muted">Recomendaciones para aprovechar Sevilla.</p>
-      </div>
-
-      <div class="card tourism">
-        <!-- Aquí van los tour-items como los tenías antes -->
-      </div>
-    </section>
-
     <!-- GETTING READY -->
     <section id="getting-ready" class="section">
       <div class="section__head">
         <h2>Getting ready</h2>
         <p class="muted">Lo dejamos para que puedas editar el contenido cuando quieras.</p>
-      </div>
-      <div class="card" id="gettingReadyBox">
-        <h3>Salones de belleza / Peluquería</h3>
-        <p class="muted">Añade direcciones, teléfonos y horarios (edítalo en <strong>script.js</strong> o aquí).</p>
-        <ul class="list" id="gettingReadyList">
-          <li>(Edítame) Peluquería 1 — dirección — teléfono — horario</li>
-          <li>(Edítame) Uñas 1 — dirección — teléfono — horario</li>
-          <li>(Edítame) Tintorería 1 — dirección — teléfono — horario</li>
-        </ul>
       </div>
     </section>
 
@@ -224,20 +178,6 @@
         <h2>Q&amp;A</h2>
         <p class="muted">Preguntas frecuentes (editable).</p>
       </div>
-      <div class="accordion" id="faqBox">
-        <details class="acc" open>
-          <summary>¿Cuándo confirmar?</summary>
-          <p>Agradeceríamos que confirmaseis lo antes posible.</p>
-        </details>
-        <details class="acc">
-          <summary>¿Hay autobús?</summary>
-          <p>Sí: salida Iglesia → Hacienda a las 14:15h, y vuelta Hacienda → Sevilla a las 21:30h, 00:00h y 02:30h.</p>
-        </details>
-        <details class="acc">
-          <summary>¿Hay opciones de menú / alergias?</summary>
-          <p>Cuéntanoslo en el formulario de confirmación.</p>
-        </details>
-      </div>
     </section>
 
     <!-- RSVP -->
@@ -246,48 +186,6 @@
         <h2>Confirmar asistencia</h2>
         <p class="muted">Formulario tipo RSVP (conexión a Google Sheets configurable).</p>
       </div>
-
-      <form class="card form" id="rsvpForm">
-        <div class="row">
-          <label>Nombre y apellidos
-            <input name="nombre" required placeholder="Ej. Paula Albendea López" />
-          </label>
-        </div>
-        <div class="row">
-          <label>¿Asistirás?
-            <select name="asistencia" required>
-              <option value="" disabled selected>Selecciona…</option>
-              <option value="Si">¡Sí, allí estaré! ✅</option>
-              <option value="No">No puedo 😢</option>
-            </select>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="acompanantes">Nombre y apellidos del acompañante (opcional)</label>
-          <input id="acompanantes" name="acompanantes" type="text" placeholder="Ej. Estela Albendea López" />
-        </div>
-        <div class="row">
-          <label>¿Alergias / preferencias?
-            <input name="alergias" placeholder="Ej. sin gluten, vegano, etc." />
-          </label>
-          <label>Autobús
-            <select name="bus">
-              <option value="No">No</option>
-              <option value="Si (Iglesia → Hacienda)">Sí (Iglesia → Hacienda)</option>
-              <option value="Si (Vuelta Hacienda → Sevilla)">Sí (Vuelta Hacienda → Sevilla)</option>
-              <option value="Si (Ida y vuelta)">Sí (Ida y vuelta)</option>
-            </select>
-          </label>
-        </div>
-        <label>Mensaje (opcional)
-          <textarea name="mensaje" rows="4" placeholder="Déjanos cualquier comentario 💛"></textarea>
-        </label>
-        <div class="actions">
-          <button class="btn" type="submit">Enviar RSVP</button>
-          <span class="small muted" id="formMsg"></span>
-        </div>
-        <p class="small muted">* Si aún no has conectado Google Sheets, verás un mensaje de “pendiente”.</p>
-      </form>
     </section>
 
     <footer class="footer">
@@ -295,6 +193,6 @@
     </footer>
   </main>
 
-  <script src="script.js?v=15"></script>
+  <script src="script.js?v=16"></script>
 </body>
 </html>
